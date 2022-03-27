@@ -42,7 +42,6 @@ public class LoginController {
 
         if (username.equals("teacher") && password.equals("teacher")) {
             try {
-                //System.out.println(getClass().getResource("/fxml/view-students.fxml"));
                 Stage stage = (Stage) loginMessage.getScene().getWindow();
                 Parent viewStudentsRoot = FXMLLoader.load(getClass().getResource("/fxml/view-students.fxml"));
                 Scene scene = new Scene(viewStudentsRoot, 600, 400);
